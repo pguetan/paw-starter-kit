@@ -1,0 +1,8 @@
+node_modules
+.next
+pnpm-lock.yaml
+README.md
+SETUP.md
+STACK-DECISION-BRIEF.md
+AGENTS.md
+docs/

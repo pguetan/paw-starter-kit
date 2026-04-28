@@ -1,0 +1,22 @@
+.surface-page {
+  background: var(--color-surface-page);
+  color: var(--color-text-primary);
+}
+
+.surface-section {
+  background: var(--color-surface-section);
+  color: var(--color-text-primary);
+}
+
+.surface-inverse {
+  background: var(--color-surface-inverse);
+  color: var(--color-text-inverse);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.text-pretty {
+  text-wrap: pretty;
+}

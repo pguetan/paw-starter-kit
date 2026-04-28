@@ -1,0 +1,110 @@
+:root {
+  --color-neutral-0: #ffffff;
+  --color-neutral-50: #f8f7f4;
+  --color-neutral-100: #efede8;
+  --color-neutral-200: #ddd8cf;
+  --color-neutral-300: #c7bfb2;
+  --color-neutral-500: #756f66;
+  --color-neutral-700: #3f3b35;
+  --color-neutral-900: #161411;
+  --color-neutral-950: #0b0a08;
+
+  --color-blue-700: #214f6f;
+  --color-blue-800: #173b55;
+  --color-gold-500: #a97836;
+  --color-green-600: #26735f;
+  --color-amber-600: #9a641e;
+  --color-red-600: #a33a32;
+
+  --color-text-primary: var(--color-neutral-950);
+  --color-text-secondary: var(--color-neutral-700);
+  --color-text-muted: var(--color-neutral-500);
+  --color-text-inverse: var(--color-neutral-0);
+  --color-surface-page: var(--color-neutral-50);
+  --color-surface-section: var(--color-neutral-0);
+  --color-surface-card: var(--color-neutral-0);
+  --color-surface-muted: var(--color-neutral-100);
+  --color-surface-inverse: var(--color-neutral-950);
+  --color-border-subtle: color-mix(
+    in srgb,
+    var(--color-neutral-300) 70%,
+    transparent
+  );
+  --color-border-strong: var(--color-neutral-700);
+  --color-accent-primary: var(--color-blue-700);
+  --color-accent-primary-hover: var(--color-blue-800);
+  --color-accent-secondary: var(--color-gold-500);
+  --color-accent-contrast: var(--color-neutral-0);
+  --color-proof-highlight: color-mix(
+    in srgb,
+    var(--color-gold-500) 18%,
+    var(--color-neutral-0)
+  );
+  --color-success: var(--color-green-600);
+  --color-warning: var(--color-amber-600);
+  --color-error: var(--color-red-600);
+  --color-focus-ring: var(--color-accent-primary);
+
+  --font-family-sans:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  --font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+  --font-size-4xl: 2.5rem;
+  --font-size-5xl: 3.25rem;
+  --font-size-6xl: 4.25rem;
+
+  --line-height-tight: 1.05;
+  --line-height-snug: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.7;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  --container-narrow: 45rem;
+  --container-default: 72rem;
+  --container-wide: 86rem;
+  --container-gutter: clamp(1rem, 4vw, 3rem);
+
+  --radius-none: 0;
+  --radius-subtle: 0.25rem;
+  --radius-medium: 0.5rem;
+  --radius-large: 0.75rem;
+  --radius-pill: 999rem;
+
+  --shadow-subtle: 0 1px 2px rgb(22 20 17 / 8%);
+  --shadow-elevated: 0 18px 50px rgb(22 20 17 / 10%);
+
+  --border-width-subtle: 1px;
+  --focus-ring-width: 2px;
+  --focus-ring-offset: 3px;
+
+  --duration-fast: 160ms;
+  --duration-base: 220ms;
+  --duration-slow: 420ms;
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+}
