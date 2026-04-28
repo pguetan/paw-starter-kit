@@ -130,6 +130,7 @@ The AI agent must follow this sequence:
 10. Report what changed, what reused existing patterns, and any deviations.
 
 The agent must prefer small, reviewable iterations over giant speculative code dumps.
+Use `docs/SYSTEM-DEVELOPMENT-MODE.md` for starter-system work and `docs/CLIENT-PROJECT-MODE.md` for real client implementation work.
 
 ---
 
@@ -433,6 +434,7 @@ Before marking work complete, confirm:
 - Did I preserve accessibility?
 - Did I avoid unnecessary dependencies?
 - Did I pass the relevant checks?
+- Did `pnpm check` pass when the change is broad or release-relevant?
 - Did I update docs if needed?
 - Did I clearly report changes, assumptions, and deviations?
 

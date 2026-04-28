@@ -193,6 +193,7 @@ All work must satisfy the following before being marked done:
 
 Before marking work done, verify all relevant items:
 
+- `pnpm check` passes for broad or release-relevant changes
 - Lint passes
 - Type check passes
 - Build passes where relevant

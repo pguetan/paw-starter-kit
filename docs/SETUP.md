@@ -116,9 +116,7 @@ When implementing:
 
 Before saying you are done, verify:
 
-- lint passes
-- type checks pass
-- build passes
+- `pnpm check` passes
 - homepage renders
 - responsive basics work
 - no duplicate patterns were introduced

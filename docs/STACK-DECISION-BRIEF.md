@@ -12,6 +12,7 @@ We are using the following stack for v1 of the Premium Authority Website Impleme
 - Deployment target: Vercel
 - Package manager: pnpm
 - Lint/format: ESLint + Prettier
+- Standard validation command: `pnpm check`
 - Component architecture: reusable primitives + reusable sections + typed props
 - Motion: keep minimal for v1; do not add a motion library unless required
 - CMS: not included in v1

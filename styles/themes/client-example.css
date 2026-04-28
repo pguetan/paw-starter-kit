@@ -1,0 +1,13 @@
+/*
+  Example client theme override.
+  Copy this file in a client repo and map semantic tokens to approved brand values.
+*/
+
+[data-theme="client-example"] {
+  --color-accent-primary: #214f6f;
+  --color-accent-primary-hover: #173b55;
+  --color-accent-secondary: #a97836;
+  --color-surface-page: #f8f7f4;
+  --color-surface-section: #ffffff;
+  --color-surface-muted: #efede8;
+}

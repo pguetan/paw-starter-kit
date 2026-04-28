@@ -49,6 +49,13 @@ Before making changes, read these files in order:
 9. `docs/DEPLOYMENT.md`
 10. `docs/DEFINITION-OF-DONE.md`
 
+For template or client-project work, also read the relevant mode guide:
+
+- `docs/SYSTEM-DEVELOPMENT-MODE.md`
+- `docs/CLIENT-PROJECT-MODE.md`
+- `docs/NEW-CLIENT-PROJECT-GUIDE.md`
+- `docs/CLIENT-INTAKE-BRIEF.md`
+
 If any of these files conflict with the codebase, flag the conflict explicitly.
 
 ---
@@ -209,6 +216,7 @@ Typical commands:
 ```bash
 pnpm install
 pnpm dev
+pnpm check
 pnpm lint
 pnpm typecheck
 pnpm build
@@ -218,6 +226,7 @@ If a command is missing from `package.json`, add it only if necessary and keep i
 
 Prefer file-scoped checks when possible.
 Run broader checks before claiming completion.
+Use `pnpm check` as the standard full local gate.
 
 ---
 

@@ -80,6 +80,13 @@ Start here when working in the repo:
 - `docs/DESIGN-SYSTEM-SPEC.md` — tokens, layout, typography, sections, variants, and presets
 - `docs/DEBUGGING.md` — standard debugging workflow
 - `docs/DEPLOYMENT.md` — preview, production, rollback, and release process
+- `docs/SYSTEM-DEVELOPMENT-MODE.md` — rules for improving the starter system
+- `docs/CLIENT-PROJECT-MODE.md` — rules for building client projects from the starter
+- `docs/NEW-CLIENT-PROJECT-GUIDE.md` — how to start a separate client repo
+- `docs/COMPONENT-INVENTORY.md` and `docs/SECTION-INVENTORY.md` — reusable building-block inventory
+- `docs/VARIANT-PRESET-GUIDE.md` — controlled variation rules
+- `docs/THEME-OVERRIDE-GUIDE.md` — client theme override workflow
+- `docs/QA-CHECKLIST.md` — implementation and launch QA checklist
 
 Read these in order if you are new:
 1. `PRODUCT-REQUIREMENTS.md`
@@ -199,10 +206,9 @@ pnpm run dev
 ```
 
 ### 4. Run checks
+
 ```bash
-pnpm run lint
-pnpm run typecheck
-pnpm run build
+pnpm run check
 ```
 
 ---
@@ -330,12 +336,14 @@ Current status:
 - Initial primitives and the Hero, Services, and Testimonials section families added
 - Reference homepage route composed from Hero, Services, and Testimonials
 - CI and pull request review guardrails added
+- Template-readiness docs added for system mode, client mode, client intake, inventories, variants, themes, QA, and project creation
+- SEO foundation added with metadata helper, structured data helper, sitemap, robots, and default OG placeholder
 
 Recommended next setup steps:
 1. Review and approve the Phase 1 scaffold and reference homepage
 2. Replace placeholder content with approved copy and proof
 3. Verify responsive behavior against the real homepage composition
-4. Add deeper SEO, analytics, blog, and content-editing systems when they enter scope
+4. Add analytics, blog, and content-editing systems when they enter scope
 
 ---
 

@@ -1,0 +1,11 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title description">
+  <title id="title">Premium Authority Website System</title>
+  <desc id="description">Starter Open Graph placeholder for premium authority websites.</desc>
+  <rect width="1200" height="630" fill="#F8F7F4"/>
+  <rect x="72" y="72" width="1056" height="486" rx="16" fill="#FFFFFF" stroke="#DDD8CF"/>
+  <text x="120" y="236" fill="#0B0A08" font-family="Inter, Arial, sans-serif" font-size="64" font-weight="700">Premium Authority</text>
+  <text x="120" y="318" fill="#0B0A08" font-family="Inter, Arial, sans-serif" font-size="64" font-weight="700">Website System</text>
+  <text x="120" y="398" fill="#3F3B35" font-family="Inter, Arial, sans-serif" font-size="30">Reusable starter for high-ticket coaches and consultants</text>
+  <rect x="120" y="456" width="220" height="8" rx="4" fill="#214F6F"/>
+  <rect x="360" y="456" width="96" height="8" rx="4" fill="#A97836"/>
+</svg>

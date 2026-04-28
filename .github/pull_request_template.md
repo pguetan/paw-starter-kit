@@ -11,10 +11,7 @@
 
 ## Validation
 
-- [ ] `pnpm format:check`
-- [ ] `pnpm lint`
-- [ ] `pnpm typecheck`
-- [ ] `pnpm build`
+- [ ] `pnpm check`
 - [ ] Responsive basics checked where UI changed.
 - [ ] Accessibility basics checked where UI changed.
 
