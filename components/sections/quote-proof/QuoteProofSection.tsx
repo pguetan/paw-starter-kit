@@ -17,7 +17,7 @@ export function QuoteProofSection({
         <p className="text-6xl font-bold leading-none" aria-hidden="true">
           ”
         </p>
-        <blockquote className="mx-auto max-w-3xl text-[var(--font-size-2xl)] leading-[var(--line-height-snug)] md:text-[var(--font-size-3xl)]">
+        <blockquote className="mx-auto max-w-4xl text-[var(--font-size-3xl)] leading-[var(--line-height-snug)] md:text-[var(--font-size-4xl)]">
           {quote}
         </blockquote>
         <footer className="mt-10 flex items-center justify-center gap-4 text-left">

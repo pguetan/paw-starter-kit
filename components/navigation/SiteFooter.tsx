@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import { Container } from "@/components/ui";
 import { primaryNavigation } from "@/data/navigation";
 import { siteConfig } from "@/data/site";
@@ -13,16 +11,12 @@ export function SiteFooter() {
       id="contact"
     >
       <Container width="wide">
-        <div className="mx-auto flex max-w-2xl flex-col items-center gap-6">
+        <div className="mx-auto flex flex-col items-center gap-6">
           <SocialLinks items={siteConfig.socialLinks} tone="muted" />
 
-          <Image
-            src={siteConfig.brand.wordmark}
-            alt={siteConfig.shortName}
-            width={660}
-            height={180}
-            className="mt-8 w-full max-w-5xl opacity-50"
-          />
+          <p className="mt-8 w-full text-center text-[clamp(4rem,13vw,10rem)] font-extrabold uppercase leading-none text-white/45">
+            {siteConfig.shortName}
+          </p>
 
           <nav
             className="mt-8 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm text-white/55"

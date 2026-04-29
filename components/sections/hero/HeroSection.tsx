@@ -26,19 +26,61 @@ export function HeroSection({
   const isPanel = variant === "panel";
   const isInverse = tone === "inverse" || isPanel;
 
+  if (isPanel) {
+    return (
+      <Section tone="default" spacing="compact" className="pt-3">
+        <Container width="wide" className={classes.container}>
+          <div
+            className={cn(
+              "flex max-w-[var(--container-narrow)] flex-col gap-6",
+              classes.content,
+            )}
+          >
+            {eyebrow ? <Badge tone="inverse">{eyebrow}</Badge> : null}
+            <Heading as="h1" size="display" className="text-inverse-text">
+              {title}
+            </Heading>
+          </div>
+
+          <div className="flex max-w-md flex-col items-start gap-6 lg:justify-self-end">
+            {description ? (
+              <Text size="lg" tone="inverse">
+                {description}
+              </Text>
+            ) : null}
+            {primaryCta || secondaryCta ? (
+              <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
+                {primaryCta ? (
+                  <Button
+                    href={primaryCta.href}
+                    size="lg"
+                    variant={primaryCta.variant ?? "primary"}
+                    className="bg-white !text-primary hover:bg-white/85"
+                  >
+                    {primaryCta.label}
+                  </Button>
+                ) : null}
+                {secondaryCta ? (
+                  <Button
+                    href={secondaryCta.href}
+                    size="lg"
+                    variant={secondaryCta.variant ?? "secondary"}
+                    className="border-white/80 bg-transparent text-inverse-text hover:bg-white/10"
+                  >
+                    {secondaryCta.label}
+                  </Button>
+                ) : null}
+              </div>
+            ) : null}
+          </div>
+        </Container>
+      </Section>
+    );
+  }
+
   return (
-    <Section
-      tone={isPanel ? "default" : tone}
-      spacing={isPanel ? "compact" : "spacious"}
-      className={isPanel ? "pt-3" : undefined}
-    >
-      <Container
-        width="wide"
-        className={cn(
-          classes.container,
-          isPanel && "grid gap-12 lg:grid-cols-[1.1fr_0.8fr]",
-        )}
-      >
+    <Section tone={tone} spacing="spacious">
+      <Container width="wide" className={classes.container}>
         <div
           className={cn(
             "flex max-w-[var(--container-narrow)] flex-col gap-6",
@@ -71,11 +113,6 @@ export function HeroSection({
                   href={primaryCta.href}
                   size="lg"
                   variant={primaryCta.variant ?? "primary"}
-                  className={
-                    isPanel
-                      ? "bg-white !text-primary hover:bg-white/85"
-                      : undefined
-                  }
                 >
                   {primaryCta.label}
                 </Button>
@@ -85,11 +122,6 @@ export function HeroSection({
                   href={secondaryCta.href}
                   size="lg"
                   variant={secondaryCta.variant ?? "secondary"}
-                  className={
-                    isPanel
-                      ? "border-white/80 bg-transparent text-inverse-text hover:bg-white/10"
-                      : undefined
-                  }
                 >
                   {secondaryCta.label}
                 </Button>
