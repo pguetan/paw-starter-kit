@@ -221,6 +221,9 @@ Use this when:
 - updating spacing rhythm,
 - or changing shared visual foundations.
 
+For hands-on CSS decisions, use `CSS-EDITING-CHEAT-SHEET.md`.
+It maps local, reusable, and global edits to the exact starter files and token options.
+
 Where to edit:
 - `styles/tokens.css`
 - `styles/prose.css`
