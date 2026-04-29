@@ -49,12 +49,9 @@ Before making changes, read these files in order:
 9. `docs/DEPLOYMENT.md`
 10. `docs/DEFINITION-OF-DONE.md`
 
-For template or client-project work, also read the relevant mode guide:
+For starter-system work, keep changes reusable, brand-neutral, documented, and validated with `pnpm check`.
 
-- `docs/SYSTEM-DEVELOPMENT-MODE.md`
-- `docs/CLIENT-PROJECT-MODE.md`
-- `docs/NEW-CLIENT-PROJECT-GUIDE.md`
-- `docs/CLIENT-INTAKE-BRIEF.md`
+For real client website work, use a separate client repo with approved client inputs and client-safe docs. Do not turn this starter into a client project.
 
 If any of these files conflict with the codebase, flag the conflict explicitly.
 
@@ -204,6 +201,8 @@ Current priority:
 - compose one homepage from those 3 sections
 
 Do not build extra pages or systems unless explicitly requested.
+
+Internal roadmap, client tracking, promotion, and registry decisions live outside this starter repo.
 
 ---
 

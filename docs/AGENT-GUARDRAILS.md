@@ -130,7 +130,9 @@ The AI agent must follow this sequence:
 10. Report what changed, what reused existing patterns, and any deviations.
 
 The agent must prefer small, reviewable iterations over giant speculative code dumps.
-Use `docs/SYSTEM-DEVELOPMENT-MODE.md` for starter-system work and `docs/CLIENT-PROJECT-MODE.md` for real client implementation work.
+
+For starter-system work, keep changes reusable, brand-neutral, documented, and validated.
+For real client implementation work, use a separate client repo with approved client inputs and client-safe docs.
 
 ---
 

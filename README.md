@@ -80,9 +80,6 @@ Start here when working in the repo:
 - `docs/DESIGN-SYSTEM-SPEC.md` — tokens, layout, typography, sections, variants, and presets
 - `docs/DEBUGGING.md` — standard debugging workflow
 - `docs/DEPLOYMENT.md` — preview, production, rollback, and release process
-- `docs/SYSTEM-DEVELOPMENT-MODE.md` — rules for improving the starter system
-- `docs/CLIENT-PROJECT-MODE.md` — rules for building client projects from the starter
-- `docs/NEW-CLIENT-PROJECT-GUIDE.md` — how to start a separate client repo
 - `docs/COMPONENT-INVENTORY.md` and `docs/SECTION-INVENTORY.md` — reusable building-block inventory
 - `docs/VARIANT-PRESET-GUIDE.md` — controlled variation rules
 - `docs/THEME-OVERRIDE-GUIDE.md` — client theme override workflow
@@ -158,6 +155,8 @@ Make sure you have:
 - approved media assets,
 - required integrations,
 - and content/editability requirements.
+
+Use a separate client repo for real client work. Keep this starter brand-neutral and reusable.
 
 ### While building
 - Reuse existing components before creating new ones.

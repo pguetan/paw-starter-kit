@@ -17,22 +17,18 @@ Start here when working in the repo.
 
 ## Template readiness
 
-- `SYSTEM-DEVELOPMENT-MODE.md`
-- `CLIENT-PROJECT-MODE.md`
-- `NEW-CLIENT-PROJECT-GUIDE.md`
-- `CLIENT-INTAKE-BRIEF.md`
 - `COMPONENT-INVENTORY.md`
 - `SECTION-INVENTORY.md`
 - `VARIANT-PRESET-GUIDE.md`
 - `THEME-OVERRIDE-GUIDE.md`
 - `QA-CHECKLIST.md`
 
-## Planning references
+## Starter-safe references
 
 - `SETUP.md`
 - `STACK-DECISION-BRIEF.md`
-- `PROJECT-BRIEF.md`
-- `PRODUCT.md`
+
+Internal planning, client tracking, registry governance, and promotion decisions are managed outside this starter repo.
 
 ## Standard validation
 
@@ -41,4 +37,3 @@ Run:
 ```bash
 pnpm check
 ```
-
