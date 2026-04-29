@@ -16,7 +16,7 @@ const variantClasses: Record<ButtonVariant, string> = {
     "border-border-subtle bg-card text-primary hover:border-border-strong hover:bg-muted",
   quiet: "border-transparent bg-transparent text-primary hover:bg-muted",
   inverse:
-    "border-transparent bg-white text-primary shadow-[var(--shadow-subtle)] hover:bg-white/85",
+    "border-transparent bg-white text-[color:var(--color-text-primary)] shadow-[var(--shadow-subtle)] hover:bg-white/85",
 };
 
 const sizeClasses: Record<ButtonSize, string> = {
