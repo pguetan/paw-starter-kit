@@ -4,6 +4,12 @@
 
 Use this guide when you want to make small visual edits without hunting through the whole Next.js project.
 
+For a visual reference, open:
+
+```txt
+/design-system
+```
+
 The main question is:
 
 ```txt
@@ -604,4 +610,3 @@ For visual edits, also check the browser at desktop and mobile widths:
 - no horizontal scroll
 - changed element looks correct
 - text remains readable against its background
-
