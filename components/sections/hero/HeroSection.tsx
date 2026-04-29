@@ -23,11 +23,22 @@ export function HeroSection({
   tone = "default",
 }: HeroSectionProps) {
   const classes = heroVariants[variant];
-  const isInverse = tone === "inverse";
+  const isPanel = variant === "panel";
+  const isInverse = tone === "inverse" || isPanel;
 
   return (
-    <Section tone={tone} spacing="spacious">
-      <Container width="wide" className={classes.container}>
+    <Section
+      tone={isPanel ? "default" : tone}
+      spacing={isPanel ? "compact" : "spacious"}
+      className={isPanel ? "pt-3" : undefined}
+    >
+      <Container
+        width="wide"
+        className={cn(
+          classes.container,
+          isPanel && "grid gap-12 lg:grid-cols-[1.1fr_0.8fr]",
+        )}
+      >
         <div
           className={cn(
             "flex max-w-[var(--container-narrow)] flex-col gap-6",
@@ -60,6 +71,11 @@ export function HeroSection({
                   href={primaryCta.href}
                   size="lg"
                   variant={primaryCta.variant ?? "primary"}
+                  className={
+                    isPanel
+                      ? "bg-white !text-primary hover:bg-white/85"
+                      : undefined
+                  }
                 >
                   {primaryCta.label}
                 </Button>
@@ -69,6 +85,11 @@ export function HeroSection({
                   href={secondaryCta.href}
                   size="lg"
                   variant={secondaryCta.variant ?? "secondary"}
+                  className={
+                    isPanel
+                      ? "border-white/80 bg-transparent text-inverse-text hover:bg-white/10"
+                      : undefined
+                  }
                 >
                   {secondaryCta.label}
                 </Button>
@@ -77,7 +98,7 @@ export function HeroSection({
           ) : null}
         </div>
 
-        {proofItems?.length ? (
+        {proofItems?.length && !isPanel ? (
           <div
             className={classes.proofGrid}
             aria-label="Credibility highlights"

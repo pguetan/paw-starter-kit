@@ -20,4 +20,9 @@ export const servicesVariants: Record<
     grid: "grid gap-4 lg:grid-cols-[1.1fr_0.95fr_0.95fr]",
     card: "min-h-64 first:bg-muted",
   },
+  programCards: {
+    header: "left",
+    grid: "grid gap-4 lg:grid-cols-3",
+    card: "min-h-[26rem] border-transparent bg-inverse p-8 text-inverse-text",
+  },
 };

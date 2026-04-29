@@ -21,4 +21,10 @@ export const heroVariants: Record<
     content: "items-center text-center",
     proofGrid: "grid gap-4 sm:grid-cols-3",
   },
+  panel: {
+    container:
+      "min-h-[44rem] items-end rounded-[2rem] bg-inverse px-6 pb-14 pt-52 text-inverse-text md:min-h-[48rem] md:px-16 md:pb-20 md:pt-64",
+    content: "",
+    proofGrid: "grid gap-4 md:max-w-[26rem]",
+  },
 };

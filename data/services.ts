@@ -1,23 +1,25 @@
 import type { ServiceItem } from "@/components/sections/services";
 
-// Placeholder content for Phase 2 composition. Replace with approved copy.
 export const placeholderServices: ServiceItem[] = [
   {
-    title: "Strategic positioning",
+    label: "Course",
+    title: "Signature course",
     description:
-      "Placeholder service description. Replace this with approved offer copy.",
-    ctaLabel: "Placeholder CTA",
+      "Use this card for a structured program, self-paced offer, or entry-level authority product.",
+    ctaLabel: "Explore course",
   },
   {
-    title: "Authority website system",
+    label: "Coaching",
+    title: "Private coaching",
     description:
-      "Placeholder service description. Replace this with approved offer copy.",
-    ctaLabel: "Placeholder CTA",
+      "Use this card for a premium advisory, coaching, consulting, or done-with-you offer.",
+    ctaLabel: "Explore coaching",
   },
   {
-    title: "Conversion path clarity",
+    label: "Mastermind",
+    title: "Expert community",
     description:
-      "Placeholder service description. Replace this with approved offer copy.",
-    ctaLabel: "Placeholder CTA",
+      "Use this card for a group program, mastermind, membership, or high-touch community.",
+    ctaLabel: "Explore community",
   },
 ];

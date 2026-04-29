@@ -18,6 +18,6 @@ export const testimonialsVariants: Record<
   rail: {
     header: "left",
     list: "flex gap-4 overflow-x-auto pb-2",
-    item: "min-w-[18rem] max-w-sm",
+    item: "min-h-[28rem] min-w-[19rem] max-w-sm p-8",
   },
 };

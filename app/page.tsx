@@ -1,10 +1,22 @@
 import {
+  AuthorityBioSection,
+  BlogPreviewSection,
+  CtaSection,
   HeroSection,
+  LeadMagnetSection,
+  LogoStripSection,
+  QuoteProofSection,
   ServicesSection,
   TestimonialsSection,
 } from "@/components/sections";
 import {
+  homepageAuthorityBio,
+  homepageBlogPreview,
+  homepageFinalCta,
   homepageHero,
+  homepageLeadMagnet,
+  homepageLogoStrip,
+  homepageQuoteProof,
   homepageServicesIntro,
   homepageTestimonialsIntro,
 } from "@/data/home";
@@ -18,15 +30,21 @@ export default function HomePage() {
       <ServicesSection
         {...homepageServicesIntro}
         items={placeholderServices}
-        variant="featured"
+        variant="programCards"
         tone="muted"
       />
+      <QuoteProofSection {...homepageQuoteProof} />
+      <AuthorityBioSection {...homepageAuthorityBio} />
+      <LogoStripSection {...homepageLogoStrip} />
       <TestimonialsSection
         {...homepageTestimonialsIntro}
         items={placeholderTestimonials}
-        variant="grid"
+        variant="rail"
         tone="default"
       />
+      <LeadMagnetSection {...homepageLeadMagnet} />
+      <BlogPreviewSection {...homepageBlogPreview} />
+      <CtaSection {...homepageFinalCta} />
     </>
   );
 }

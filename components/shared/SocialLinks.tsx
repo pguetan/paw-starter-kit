@@ -39,7 +39,7 @@ export function SocialLinks({ items, tone = "light" }: SocialLinksProps) {
               alt=""
               width={16}
               height={16}
-              className="max-h-4 w-auto"
+              style={{ width: 16, height: 16 }}
             />
           </a>
         </li>

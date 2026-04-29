@@ -9,7 +9,7 @@ import { SocialLinks } from "../shared";
 export function SiteFooter() {
   return (
     <footer
-      className="bg-inverse py-16 text-center text-inverse-text md:py-24"
+      className="border-t border-white/15 bg-inverse py-16 text-center text-inverse-text md:py-24"
       id="contact"
     >
       <Container width="wide">

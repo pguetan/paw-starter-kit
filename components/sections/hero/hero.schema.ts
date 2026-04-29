@@ -16,6 +16,6 @@ export type HeroSectionProps = {
   primaryCta?: HeroCta;
   secondaryCta?: HeroCta;
   proofItems?: HeroProofItem[];
-  variant?: "split" | "centered";
+  variant?: "split" | "centered" | "panel";
   tone?: "default" | "muted" | "inverse";
 };

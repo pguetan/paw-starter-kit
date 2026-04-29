@@ -1,23 +1,28 @@
 import type { TestimonialItem } from "@/components/sections/testimonials";
 
-// Placeholder content for Phase 2 composition. Replace with approved proof.
 export const placeholderTestimonials: TestimonialItem[] = [
   {
     quote:
-      "Placeholder testimonial. Replace this with approved client proof before launch.",
-    name: "Client Name",
-    role: "Client Role",
+      "Replace this with an approved client result, short testimonial, or video proof summary.",
+    name: "Example Client",
+    role: "Agency Owner",
   },
   {
     quote:
-      "Placeholder testimonial. Replace this with approved client proof before launch.",
-    name: "Client Name",
-    role: "Client Role",
+      "Replace this with an approved client result, short testimonial, or video proof summary.",
+    name: "Example Client",
+    role: "Consultant",
   },
   {
     quote:
-      "Placeholder testimonial. Replace this with approved client proof before launch.",
-    name: "Client Name",
-    role: "Client Role",
+      "Replace this with an approved client result, short testimonial, or video proof summary.",
+    name: "Example Client",
+    role: "Founder",
+  },
+  {
+    quote:
+      "Replace this with an approved client result, short testimonial, or video proof summary.",
+    name: "Example Client",
+    role: "Advisor",
   },
 ];
