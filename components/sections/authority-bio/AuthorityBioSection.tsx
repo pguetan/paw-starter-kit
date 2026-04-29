@@ -60,11 +60,7 @@ export function AuthorityBioSection({
                   </Text>
                 ))}
               </div>
-              <Button
-                className="mt-8 bg-white !text-primary hover:bg-white/85"
-                href={cta.href}
-                variant="secondary"
-              >
+              <Button className="mt-8" href={cta.href} variant="inverse">
                 {cta.label}
               </Button>
             </article>

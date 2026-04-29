@@ -54,8 +54,7 @@ export function HeroSection({
                   <Button
                     href={primaryCta.href}
                     size="lg"
-                    variant={primaryCta.variant ?? "primary"}
-                    className="bg-white !text-primary hover:bg-white/85"
+                    variant={primaryCta.variant ?? "inverse"}
                   >
                     {primaryCta.label}
                   </Button>

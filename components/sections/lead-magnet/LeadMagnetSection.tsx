@@ -43,11 +43,7 @@ export function LeadMagnetSection({
                   placeholder="Your email"
                   type="email"
                 />
-                <Button
-                  className="w-full bg-white text-primary hover:bg-white/85"
-                  type="button"
-                  variant="secondary"
-                >
+                <Button className="w-full" type="button" variant="inverse">
                   Download now
                 </Button>
               </div>

@@ -10,7 +10,7 @@ Use it before creating new UI so the system stays reusable instead of quietly du
 
 | Component | Path | Purpose | Notes |
 |---|---|---|---|
-| `Button` | `components/ui/Button.tsx` | Button and link-style CTA primitive | Supports `primary`, `secondary`, and `quiet`; sizes `sm`, `md`, `lg` |
+| `Button` | `components/ui/Button.tsx` | Button and link-style CTA primitive | Supports `primary`, `secondary`, `quiet`, and `inverse`; sizes `sm`, `md`, `lg` |
 | `Container` | `components/ui/Container.tsx` | Width and gutter primitive | Supports `narrow`, `default`, `wide`, `full` |
 | `Section` | `components/ui/Section.tsx` | Full-width section wrapper | Supports `default`, `muted`, `inverse` tones and spacing presets |
 | `Heading` | `components/ui/Heading.tsx` | Typed heading primitive | Supports semantic `as` prop and display sizes |

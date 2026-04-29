@@ -6,7 +6,7 @@ import type {
 
 import { cn } from "@/lib/utils/cn";
 
-type ButtonVariant = "primary" | "secondary" | "quiet";
+type ButtonVariant = "primary" | "secondary" | "quiet" | "inverse";
 type ButtonSize = "sm" | "md" | "lg";
 
 const variantClasses: Record<ButtonVariant, string> = {
@@ -15,6 +15,8 @@ const variantClasses: Record<ButtonVariant, string> = {
   secondary:
     "border-border-subtle bg-card text-primary hover:border-border-strong hover:bg-muted",
   quiet: "border-transparent bg-transparent text-primary hover:bg-muted",
+  inverse:
+    "border-transparent bg-white text-primary shadow-[var(--shadow-subtle)] hover:bg-white/85",
 };
 
 const sizeClasses: Record<ButtonSize, string> = {

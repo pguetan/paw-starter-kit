@@ -19,11 +19,7 @@ export function CtaSection({ title, description, cta }: CtaSectionProps) {
         <Text className="mx-auto mt-6 max-w-xl text-white/78">
           {description}
         </Text>
-        <Button
-          className="mt-8 bg-white !text-primary hover:bg-white/85"
-          href={cta.href}
-          variant="secondary"
-        >
+        <Button className="mt-8" href={cta.href} variant="inverse">
           {cta.label}
         </Button>
       </Container>
