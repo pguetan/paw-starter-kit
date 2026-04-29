@@ -19,7 +19,7 @@ export function Badge({ tone = "default", className, ...props }: BadgeProps) {
   return (
     <span
       className={cn(
-        "inline-flex w-fit items-center rounded-[var(--radius-pill)] border px-3 py-1 text-sm font-medium uppercase tracking-normal",
+        "inline-flex w-fit items-center rounded-[var(--radius-pill)] border px-3 py-1 text-base font-medium uppercase tracking-normal",
         toneClasses[tone],
         className,
       )}
