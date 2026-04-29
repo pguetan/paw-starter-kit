@@ -23,7 +23,7 @@ export const heroVariants: Record<
   },
   panel: {
     container:
-      "grid min-h-[44rem] gap-12 rounded-[2rem] bg-inverse px-6 pb-14 pt-52 text-inverse-text md:min-h-[48rem] md:px-16 md:pb-20 md:pt-64 lg:grid-cols-[1.1fr_0.8fr] lg:items-end",
+      "grid min-h-[calc(100vh-1.5rem)] gap-12 rounded-[2rem] bg-inverse px-6 pb-14 pt-52 text-inverse-text md:min-h-[calc(100vh-2rem)] md:px-16 md:pb-20 md:pt-64 lg:grid-cols-[1.1fr_0.8fr] lg:items-end",
     content: "items-start text-left",
     proofGrid: "grid gap-4 md:max-w-[26rem]",
   },

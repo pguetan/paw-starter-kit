@@ -28,15 +28,19 @@ export function HeroSection({
 
   if (isPanel) {
     return (
-      <Section tone="default" spacing="compact" className="pt-3">
-        <Container width="wide" className={classes.container}>
+      <Section
+        tone="default"
+        spacing="none"
+        className="min-h-screen p-3 md:p-4"
+      >
+        <Container width="full" className={cn("px-0", classes.container)}>
           <div
             className={cn(
               "flex max-w-[var(--container-narrow)] flex-col gap-6",
               classes.content,
             )}
           >
-            {eyebrow ? <Badge tone="inverse">{eyebrow}</Badge> : null}
+            {eyebrow ? <Badge tone="ghost">{eyebrow}</Badge> : null}
             <Heading as="h1" size="display" className="text-inverse-text">
               {title}
             </Heading>

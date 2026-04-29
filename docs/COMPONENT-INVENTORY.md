@@ -12,11 +12,11 @@ Use it before creating new UI so the system stays reusable instead of quietly du
 |---|---|---|---|
 | `Button` | `components/ui/Button.tsx` | Button and link-style CTA primitive | Supports `primary`, `secondary`, `quiet`, and `inverse`; sizes `sm`, `md`, `lg` |
 | `Container` | `components/ui/Container.tsx` | Width and gutter primitive | Supports `narrow`, `default`, `wide`, `full` |
-| `Section` | `components/ui/Section.tsx` | Full-width section wrapper | Supports `default`, `muted`, `inverse` tones and spacing presets |
+| `Section` | `components/ui/Section.tsx` | Full-width section wrapper | Supports `default`, `muted`, `inverse` tones and `none`, `compact`, `default`, `spacious` spacing presets |
 | `Heading` | `components/ui/Heading.tsx` | Typed heading primitive | Supports semantic `as` prop and display sizes |
 | `Text` | `components/ui/Text.tsx` | Body text primitive | Supports text size and tone roles |
 | `Card` | `components/ui/Card.tsx` | Reusable card surface | Uses tokenized radius, border, surface, and shadow |
-| `Badge` | `components/ui/Badge.tsx` | Eyebrow/proof label primitive | Supports `default`, `proof`, and `inverse` tones |
+| `Badge` | `components/ui/Badge.tsx` | Eyebrow/proof label primitive | Supports `default`, `proof`, `inverse`, and `ghost` tones |
 
 ## Shared components
 

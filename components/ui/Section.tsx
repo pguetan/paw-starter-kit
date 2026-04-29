@@ -3,7 +3,7 @@ import type { ComponentPropsWithoutRef } from "react";
 import { cn } from "@/lib/utils/cn";
 
 type SectionTone = "default" | "muted" | "inverse";
-type SectionSpacing = "compact" | "default" | "spacious";
+type SectionSpacing = "none" | "compact" | "default" | "spacious";
 
 const toneClasses: Record<SectionTone, string> = {
   default: "bg-section text-primary",
@@ -12,6 +12,7 @@ const toneClasses: Record<SectionTone, string> = {
 };
 
 const spacingClasses: Record<SectionSpacing, string> = {
+  none: "py-0",
   compact: "py-12 md:py-16",
   default: "py-16 md:py-24",
   spacious: "py-20 md:py-32",
