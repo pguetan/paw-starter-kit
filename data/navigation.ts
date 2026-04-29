@@ -5,7 +5,23 @@ export type NavigationItem = {
 
 export const primaryNavigation: NavigationItem[] = [
   {
-    label: "Home",
-    href: "/",
+    label: "About",
+    href: "#about",
+  },
+  {
+    label: "Programs",
+    href: "#programs",
+  },
+  {
+    label: "Downloads",
+    href: "#downloads",
+  },
+  {
+    label: "Blog",
+    href: "#blog",
+  },
+  {
+    label: "Contact",
+    href: "#contact",
   },
 ];

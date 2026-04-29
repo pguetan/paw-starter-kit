@@ -23,6 +23,14 @@ Use it before creating new UI so the system stays reusable instead of quietly du
 | Component | Path | Purpose | Notes |
 |---|---|---|---|
 | `SectionHeader` | `components/shared/SectionHeader.tsx` | Reusable section intro block | Supports optional eyebrow, title, description, and alignment |
+| `SocialLinks` | `components/shared/SocialLinks.tsx` | Data-driven social icon link list | Uses starter placeholder SVG icons from `public/icons/social/` |
+
+## Navigation components
+
+| Component | Path | Purpose | Notes |
+|---|---|---|---|
+| `SiteHeader` | `components/navigation/SiteHeader.tsx` | Starter header shell | Uses `data/navigation.ts`, `data/site.ts`, and brand/social SVG assets |
+| `SiteFooter` | `components/navigation/SiteFooter.tsx` | Starter footer shell | Uses footer nav, social links, legal links, and brand wordmark data |
 
 ## Utility helpers
 
@@ -52,4 +60,3 @@ Create a shared component only when:
 - one-off styled wrappers that should be `Section` or `Container`
 - components with final copy embedded inside them
 - components that mix content, layout, styling, and integration logic
-

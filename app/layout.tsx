@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 
+import { SiteFooter, SiteHeader } from "@/components/navigation";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { organizationJsonLd } from "@/lib/seo/structured-data";
 
@@ -13,7 +14,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <SiteHeader />
         <main>{children}</main>
+        <SiteFooter />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

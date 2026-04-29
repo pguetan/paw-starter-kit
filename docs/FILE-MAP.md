@@ -472,8 +472,10 @@ public/
 │  ├─ pages/
 │  ├─ sections/
 │  ├─ blog/
-│  └─ brand/
+│  ├─ brand/
+│  └─ logos/
 ├─ icons/
+│  └─ social/
 ├─ og/
 ├─ downloads/
 └─ fonts/
@@ -483,6 +485,7 @@ public/
 - optimized images,
 - social preview images,
 - icons,
+- starter-safe placeholder brand and logo-strip SVGs,
 - downloadable assets,
 - and static public files.
 
