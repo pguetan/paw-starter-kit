@@ -419,6 +419,39 @@ text-[length:var(--font-size-4xl)]
 
 or prefer existing primitives like `Heading` and `Text`.
 
+### Pixel to rem conversion
+
+Wireframe and Figma specs may be written in pixels. Convert them to existing tokens or `rem` values during implementation unless exact pixel behavior is required.
+
+Default baseline:
+
+```txt
+16px = 1rem
+px / 16 = rem
+```
+
+Common conversions:
+
+| Pixels | Rem |
+|---|---|
+| `4px` | `0.25rem` |
+| `8px` | `0.5rem` |
+| `12px` | `0.75rem` |
+| `16px` | `1rem` |
+| `20px` | `1.25rem` |
+| `24px` | `1.5rem` |
+| `32px` | `2rem` |
+| `40px` | `2.5rem` |
+| `48px` | `3rem` |
+| `64px` | `4rem` |
+
+Use this order:
+
+1. Use an existing component prop or token.
+2. Add or propose a reusable token if the value repeats.
+3. Use a local `rem` value for one-off art direction.
+4. Keep raw `px` only for exact pixel behavior or browser-specific needs.
+
 ### Spacing tokens
 
 | Token | Value |
