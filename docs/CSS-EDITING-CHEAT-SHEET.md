@@ -26,7 +26,7 @@ Start local. Move outward only when the same decision should affect more of the 
 |---|---|---|
 | Local | One section, one layout, or one page composition needs adjustment | `app/page.tsx`, `components/sections/<section>/`, section `*.variants.ts` |
 | Reusable | A shared control or repeated pattern needs adjustment | `components/ui/`, `components/shared/`, `components/navigation/` |
-| Global | The foundation should change everywhere | `styles/tokens.css`, `styles/utilities.css`, `styles/prose.css`, `app/globals.css` |
+| Global | The foundation should change everywhere | `styles/tokens.css`, `styles/theme.css`, `styles/utilities.css`, `styles/prose.css`, `app/globals.css` |
 
 Do not jump straight to global CSS for a local layout problem.
 
@@ -87,6 +87,7 @@ Edit:
 
 ```txt
 styles/tokens.css
+styles/theme.css
 styles/themes/<client-theme>.css
 ```
 
@@ -128,6 +129,7 @@ Use this only for Tailwind imports, theme exposure, base resets, and global docu
 | Header/footer layout | `components/navigation/` |
 | Navigation labels and links | `data/navigation.ts` |
 | Global tokens | `styles/tokens.css` |
+| Brand/theme contract | `styles/theme.css` |
 | Client theme overrides | `styles/themes/<client-theme>.css` |
 | Tailwind imports and base resets | `app/globals.css` |
 
@@ -332,6 +334,46 @@ bg-accent
 border-border-subtle
 border-border-strong
 ```
+
+### Theme contract tokens
+
+Theme contract tokens live in:
+
+```txt
+styles/theme.css
+```
+
+Use these when the value is brand-facing or likely to change per client:
+
+| Token | Use |
+|---|---|
+| `--brand-primary` | Main brand/action color |
+| `--brand-primary-hover` | Main brand/action hover color |
+| `--brand-secondary` | Secondary brand accent |
+| `--brand-contrast` | Text on brand color |
+| `--surface-brand` | Brand-colored surface |
+| `--surface-hero` | Hero panel/background surface |
+| `--surface-panel` | Standard branded panel surface |
+| `--surface-panel-muted` | Muted branded panel surface |
+| `--surface-media-placeholder` | Placeholder media surface |
+| `--text-on-brand` | Text on brand surfaces |
+| `--text-on-hero` | Text on hero surfaces |
+| `--radius-panel` | Large hero/panel radius |
+| `--radius-media` | Media placeholder radius |
+| `--radius-control` | Control/button/badge radius |
+
+Buttons and eyebrows also have theme-level variables such as:
+
+```txt
+--button-primary-bg
+--button-primary-text
+--button-inverse-bg
+--button-inverse-text
+--eyebrow-proof-bg
+--eyebrow-proof-text
+```
+
+Client themes should override this contract before changing component code.
 
 When using a CSS variable as an arbitrary text color, use explicit color syntax:
 
@@ -587,7 +629,7 @@ Adjust the `spacingClasses` map.
 Check:
 
 ```txt
-styles/tokens.css
+styles/theme.css
 styles/themes/<client-theme>.css
 ```
 

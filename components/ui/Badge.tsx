@@ -5,10 +5,13 @@ import { cn } from "@/lib/utils/cn";
 type BadgeTone = "default" | "proof" | "inverse" | "ghost";
 
 const toneClasses: Record<BadgeTone, string> = {
-  default: "border-border-subtle bg-muted text-secondary",
-  proof: "border-transparent bg-[var(--color-proof-highlight)] text-primary",
-  inverse: "border-white/20 bg-white/10 text-inverse-text",
-  ghost: "border-0 bg-transparent px-0 text-inherit",
+  default:
+    "border-[color:var(--eyebrow-default-border)] bg-[var(--eyebrow-default-bg)] text-[color:var(--eyebrow-default-text)]",
+  proof:
+    "border-[color:var(--eyebrow-proof-border)] bg-[var(--eyebrow-proof-bg)] text-[color:var(--eyebrow-proof-text)]",
+  inverse:
+    "border-[color:var(--eyebrow-inverse-border)] bg-[var(--eyebrow-inverse-bg)] text-[color:var(--eyebrow-inverse-text)]",
+  ghost: "border-0 bg-transparent px-0 text-[color:var(--eyebrow-ghost-text)]",
 };
 
 type BadgeProps = ComponentPropsWithoutRef<"span"> & {

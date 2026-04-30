@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "../styles/tokens.css";
+@import "../styles/theme.css";
 @import "../styles/prose.css";
 @import "../styles/utilities.css";
 @import "../styles/animations.css";
@@ -15,8 +16,8 @@
   --color-primary: var(--color-text-primary);
   --color-secondary: var(--color-text-secondary);
   --color-inverse-text: var(--color-text-inverse);
-  --color-accent: var(--color-accent-primary);
-  --color-accent-secondary: var(--color-accent-secondary);
+  --color-accent: var(--brand-primary);
+  --color-accent-secondary: var(--brand-secondary);
   --color-border-subtle: var(--color-border-subtle);
   --color-border-strong: var(--color-border-strong);
 }

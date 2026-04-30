@@ -11,12 +11,13 @@ type ButtonSize = "sm" | "md" | "lg";
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary:
-    "border-transparent bg-accent text-inverse-text shadow-[var(--shadow-subtle)] hover:bg-[var(--color-accent-primary-hover)]",
+    "border-transparent bg-[var(--button-primary-bg)] text-[color:var(--button-primary-text)] shadow-[var(--shadow-subtle)] hover:bg-[var(--button-primary-bg-hover)]",
   secondary:
-    "border-border-subtle bg-card text-primary hover:border-border-strong hover:bg-muted",
-  quiet: "border-transparent bg-transparent text-primary hover:bg-muted",
+    "border-[color:var(--button-secondary-border)] bg-[var(--button-secondary-bg)] text-[color:var(--button-secondary-text)] hover:border-border-strong hover:bg-[var(--button-secondary-bg-hover)]",
+  quiet:
+    "border-transparent bg-[var(--button-quiet-bg)] text-[color:var(--button-quiet-text)] hover:bg-[var(--button-quiet-bg-hover)]",
   inverse:
-    "border-transparent bg-white text-[color:var(--color-text-primary)] shadow-[var(--shadow-subtle)] hover:bg-white/85",
+    "border-transparent bg-[var(--button-inverse-bg)] text-[color:var(--button-inverse-text)] shadow-[var(--shadow-subtle)] hover:bg-[var(--button-inverse-bg-hover)]",
 };
 
 const sizeClasses: Record<ButtonSize, string> = {

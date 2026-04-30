@@ -22,6 +22,7 @@ styles/themes/client-example.css
 
 ## What themes may change
 
+- brand contract tokens in `styles/theme.css`
 - semantic color mappings
 - accent hover tokens
 - surface colors
@@ -41,11 +42,36 @@ styles/themes/client-example.css
 ## Theme workflow
 
 1. Start from approved brand direction.
-2. Map approved brand values to semantic tokens.
-3. Keep primitives as raw values and components as semantic consumers.
-4. Test contrast on primary text, muted text, buttons, and inverse surfaces.
-5. Check homepage, service cards, testimonial cards, and CTA states.
-6. Run `pnpm check`.
+2. Map approved brand values to the theme contract in `styles/theme.css`.
+3. Override only the needed values in `styles/themes/<client-theme>.css`.
+4. Keep primitive tokens as raw values and components as semantic consumers.
+5. Test contrast on primary text, muted text, buttons, and inverse surfaces.
+6. Check homepage, service cards, testimonial cards, and CTA states.
+7. Run `pnpm check`.
+
+## Theme contract
+
+The starter exposes brand-facing variables in:
+
+```txt
+styles/theme.css
+```
+
+Client themes should usually override these before changing component code:
+
+```css
+[data-theme="client-example"] {
+  --brand-primary: #214f6f;
+  --brand-primary-hover: #173b55;
+  --brand-secondary: #a97836;
+  --surface-hero: #0b0a08;
+  --radius-panel: 2rem;
+}
+```
+
+Use `styles/tokens.css` for base system primitives.
+Use `styles/theme.css` for the starter's default theme contract.
+Use `styles/themes/<client-theme>.css` for client-specific overrides.
 
 ## Example usage
 
@@ -64,4 +90,3 @@ Do not activate example themes in the starter unless they are intentionally bein
 Client theme values should not be promoted into the starter.
 
 Only reusable theme patterns or token roles should be promoted.
-

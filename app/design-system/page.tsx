@@ -62,6 +62,30 @@ const semanticColors = [
   { name: "focus-ring", token: "--color-focus-ring", dark: true },
 ];
 
+const themeColors = [
+  { name: "brand-primary", token: "--brand-primary", dark: true },
+  { name: "brand-primary-hover", token: "--brand-primary-hover", dark: true },
+  { name: "brand-secondary", token: "--brand-secondary", dark: true },
+  { name: "brand-contrast", token: "--brand-contrast" },
+  { name: "surface-brand", token: "--surface-brand", dark: true },
+  { name: "surface-hero", token: "--surface-hero", dark: true },
+  { name: "surface-panel", token: "--surface-panel" },
+  { name: "surface-panel-muted", token: "--surface-panel-muted" },
+  {
+    name: "surface-media-placeholder",
+    token: "--surface-media-placeholder",
+    dark: true,
+  },
+  { name: "text-on-brand", token: "--text-on-brand" },
+  { name: "text-on-hero", token: "--text-on-hero" },
+  { name: "button-primary-bg", token: "--button-primary-bg", dark: true },
+  { name: "button-primary-text", token: "--button-primary-text" },
+  { name: "button-inverse-bg", token: "--button-inverse-bg" },
+  { name: "button-inverse-text", token: "--button-inverse-text", dark: true },
+  { name: "eyebrow-proof-bg", token: "--eyebrow-proof-bg" },
+  { name: "eyebrow-proof-text", token: "--eyebrow-proof-text", dark: true },
+];
+
 const spacingScale = [
   { name: "space-1", token: "--space-1" },
   { name: "space-2", token: "--space-2" },
@@ -104,7 +128,9 @@ const radiusScale = [
   { name: "medium", token: "--radius-medium" },
   { name: "large", token: "--radius-large" },
   { name: "pill", token: "--radius-pill" },
-  { name: "local panel", value: "2rem" },
+  { name: "panel", token: "--radius-panel" },
+  { name: "media", token: "--radius-media" },
+  { name: "control", token: "--radius-control" },
 ];
 
 const shadows = [
@@ -224,6 +250,14 @@ export default function DesignSystemPreviewPage() {
                 ))}
               </div>
             </PreviewBlock>
+
+            <PreviewBlock title="Theme contract colors">
+              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+                {themeColors.map((color) => (
+                  <TokenSwatch key={color.name} {...color} />
+                ))}
+              </div>
+            </PreviewBlock>
           </div>
         </Container>
       </Section>
@@ -312,17 +346,12 @@ export default function DesignSystemPreviewPage() {
                 <div className="grid gap-4 sm:grid-cols-2">
                   {radiusScale.map((radius) => (
                     <div key={radius.name} className="grid gap-3">
-                      <ScaleLabel
-                        name={radius.name}
-                        token={radius.token ?? radius.value}
-                      />
+                      <ScaleLabel name={radius.name} token={radius.token} />
                       <div
                         className="h-24 border border-border-subtle bg-muted"
                         style={
                           {
-                            borderRadius: radius.token
-                              ? `var(${radius.token})`
-                              : radius.value,
+                            borderRadius: `var(${radius.token})`,
                           } satisfies CSSProperties
                         }
                       />

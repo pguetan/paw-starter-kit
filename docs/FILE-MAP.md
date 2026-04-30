@@ -433,6 +433,7 @@ Recommended structure:
 ```txt
 styles/
 ├─ tokens.css
+├─ theme.css
 ├─ prose.css
 ├─ utilities.css
 ├─ animations.css
@@ -441,6 +442,7 @@ styles/
 
 ### What belongs here
 - token declarations,
+- brand/theme contract variables,
 - typography/prose styling,
 - utility layers,
 - animation utility rules,
@@ -448,6 +450,7 @@ styles/
 
 ### Edit here when
 - changing tokens,
+- changing brand-facing theme variables,
 - adjusting typography defaults,
 - changing global prose styling,
 - updating shared animation classes,
